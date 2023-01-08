@@ -12,7 +12,7 @@ const ExperienceCard = ({experience}: Props) => {
   return (
     <article  
     className='flex flex-col rounded-lg items-center space-y-2 flex-shrink-0 
-                w-[250px] md:w-[300px] xl:w-[400px] snap-center bg-[#292929] p-5
+                w-[250px] md:w-[300px] xl:w-[350px] snap-center bg-[#292929] p-3
                 opacity-30 hover:opacity-100  cursor-pointer transition-opacity duration-200 overflow-hidden'>
         <motion.img 
         initial={{
@@ -23,7 +23,7 @@ const ExperienceCard = ({experience}: Props) => {
         whileInView={{opacity:1, y:0}}
         viewport={{once:true}}
         src={urlFor(experience.companyImage).url()}
-        className='w-24 h-24 rounded-full xl:w-32 xl:h-32 object-cover object-center'
+        className='w-12 h-12 md:w-18 md:h-18 rounded-full xl:w-24 xl:h-24 object-cover object-center'
         >
 
         </motion.img>
